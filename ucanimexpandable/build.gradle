@@ -1,6 +1,10 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 }
+
+group = 'com.github.xunyang-yuhui'
+version = '1.0.0'
 
 android {
     compileSdk 31
@@ -35,4 +39,18 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.xunyang-yuhui'
+                artifactId = 'AnimExpandableView'
+                version = '1.0.0'
+            }
+        }
+    }
 }
