@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <com.yu.ucanimexpandable.UCAnimExpandableView
+        android:id="@+id/uc_textview_nextright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_shape_r10_c81d8cf"
+        app:uc_text="花间一壶酒，独酌无相亲。\n举杯邀明月，对影成三人。\n月既不解饮，影徒随我身。\n暂伴月将影，行乐须及春。\n我歌月徘徊，我舞影零乱。\n醒时同交欢，醉后各分散。\n永结无情游，相期邈云汉。"
+        app:uc_textSize="18sp"
+        app:uc_textColor="#2c2c2c"
+        app:uc_closeText="收起~"
+        app:uc_closeColor="#ffe552"
+        app:uc_closeSize="16sp"
+        app:uc_closeMode="NEXT_RIGHT"
+        app:uc_expandText="展开~"
+        app:uc_expandColor="#ee3f4d"
+        app:uc_expandSize="16sp"
+        app:uc_minLines="3"
+        />
+
+        <com.yu.ucanimexpandable.UCAnimExpandableView
+            android:id="@+id/uc_textview_nextleft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_shape_r10_c81d8cf"
+            app:uc_text="花间一壶酒，独酌无相亲。\n举杯邀明月，对影成三人。\n月既不解饮，影徒随我身。\n暂伴月将影，行乐须及春。\n我歌月徘徊，我舞影零乱。\n醒时同交欢，醉后各分散。\n永结无情游，相期邈云汉。"
+            app:uc_textSize="20sp"
+            app:uc_textColor="#2c2c2c"
+            app:uc_closeText="收起~"
+            app:uc_closeColor="#ffe552"
+            app:uc_closeSize="18sp"
+            app:uc_closeMode="NEXT_LEFT"
+            app:uc_expandText="展开~"
+            app:uc_expandColor="#ee3f4d"
+            app:uc_expandSize="18sp"
+            app:uc_minLines="3"
+            />
+
+            <com.yu.ucanimexpandable.UCAnimExpandableView
+                android:id="@+id/uc_textview_follow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_shape_r10_c81d8cf"
+                app:uc_text="花间一壶酒，独酌无相亲。\n举杯邀明月，对影成三人。\n月既不解饮，影徒随我身。\n暂伴月将影，行乐须及春。\n我歌月徘徊，我舞影零乱。\n醒时同交欢，醉后各分散。\n永结无情游，相期邈云汉。"
+                app:uc_textSize="20sp"
+                app:uc_textColor="#2c2c2c"
+                app:uc_closeText="收起~"
+                app:uc_closeColor="#ffe552"
+                app:uc_closeSize="18sp"
+                app:uc_closeMode="FOLLOW"
+                app:uc_expandText="展开~"
+                app:uc_expandColor="#ee3f4d"
+                app:uc_expandSize="18sp"
+                app:uc_minLines="3"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

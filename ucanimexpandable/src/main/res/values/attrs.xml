@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UCAnimExpandableView">
+        <attr name="uc_text" format="string|reference"/>
+        <attr name="uc_textSize" format="dimension|reference"/>
+        <attr name="uc_textColor" format="color|reference"/>
+        <attr name="uc_expandText" format="string|reference"/>
+        <attr name="uc_expandColor" format="color|reference"/>
+        <attr name="uc_expandSize" format="dimension|reference"/>
+        <attr name="uc_closeText" format="string|reference"/>
+        <attr name="uc_closeColor" format="color|reference"/>
+        <attr name="uc_closeSize" format="dimension|reference"/>
+        <attr name="uc_closeMode" format="integer">
+            <enum name="FOLLOW" value="100"/>
+            <enum name="NEXT_LEFT" value="101"/>
+            <enum name="NEXT_RIGHT" value="102"/>
+        </attr>
+        <attr name="uc_minLines" format="integer"/>
+    </declare-styleable>
+</resources>
